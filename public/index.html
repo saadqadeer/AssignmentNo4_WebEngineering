@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#bclock').click(function(){
+		$('#menu').load('clock.html');
+	});
+
+	$('#bweather').click(function(){
+			$('#menu').load('weather.html');
+		});
+
+	$('#bcalendar').click(function(){
+			$('#menu').load('calendar.html');
+		});
+	});
+
+</script>
+<body>
+
+<div class="jumbotron">
+<div id="menu" style="margin: 2cm 4cm 3cm 4cm;">
+<h1 class="header">Dash Board</h1>
+<h3>Muhammad Saad </h3>
+<h3>Web Engineering</h3>
+<br>
+
+<button type="button" class="btn btn-primary" id="bclock">Clock</button>
+<button type="button" class="btn btn-primary" id="bweather">Weather</button>
+<button type="button" class="btn btn-primary" id="bcalendar">Calendar</button>
+
+<div class="container">
+<br>
+
+
+<p>Click on task manager and make or edit your todo list. <a href="pouch.html">Task Manager</a></p>
+<p>Task Manager Involves Pouch Db</p>
+   <font size="8pt"><a href="back">Back</a></font>
+</div>
+<div id="clock" >
+</div>
+<div id="weather">
+	
+</div>
+<div id="calendar">
+	
+</div>
+
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
